@@ -23,6 +23,7 @@ def get_candidates(user_word, dictionary):
 
     print(f'Потеницальные кандидаты: {dictionary[np.argwhere(distance_list == lev_dist)].T} \nРасстояние Левенштейна = {lev_dist}')
 
-def get_words(user_document = input('Введите фразу: ')):
+def get_words():
+    user_document = input('Введите фразу: ')
     for user_word in user_document.split():
         get_candidates(user_word, dictionary)
