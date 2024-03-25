@@ -9,7 +9,9 @@ def get_words():
         word_correction = spell.correction(word)
         print('исходное слово -> исправленное')
         print(f'{word} -> {word_correction}')
-        res.append(word_correction)
+        
+        if word_correction:
+            res.append(word_correction)
     
     if len(res) == 1:
         print(*res)
@@ -17,4 +19,4 @@ def get_words():
         
     print(' '.join(res))
         
-        
+print("Модуль good_spellchecker успешно подгружен")       

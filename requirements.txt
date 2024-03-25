@@ -1,5 +1,9 @@
 argparse
 requests
 numpy
-Levenstein
+Levenshtein==0.25.0
 pyspellchecker
+transformers
+torch
+transformers[sentencepiece]
+sentencepiece

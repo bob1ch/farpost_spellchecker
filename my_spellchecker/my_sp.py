@@ -27,3 +27,5 @@ def get_words():
     user_document = input('Введите фразу: ')
     for user_word in user_document.split():
         get_candidates(user_word, dictionary)
+
+print("Модуль my_spellchecker успешно подгружен")
