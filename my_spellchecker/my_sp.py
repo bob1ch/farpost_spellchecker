@@ -2,7 +2,6 @@ import requests as r
 import numpy as np
 from Levenshtein import distance
 
-#вынести эту херню в отдельный модуль, чтобы она не качала словарь каждый раз когда прога запускается
 res = r.get('https://raw.githubusercontent.com/danakt/russian-words/master/russian.txt')
 text = res.content.decode('cp1251')
 
